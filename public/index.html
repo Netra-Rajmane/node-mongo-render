@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Items Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📦 Items Dashboard</h1>
+      <p>Manage your items easily with MongoDB + Express</p>
+    </header>
+
+    <main>
+      <form id="itemForm" class="card">
+        <h2>Add New Item</h2>
+        <input id="name" placeholder="Item name" required />
+        <input id="description" placeholder="Item description" />
+        <button type="submit">Add Item</button>
+      </form>
+
+      <section class="card">
+        <h2>Items List</h2>
+        <ul id="items"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ using Node.js, Express & MongoDB</p>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
